@@ -57,6 +57,24 @@ namespace TechJobs.ViewModels
                     Text = field.Value
                 });
             }
+
+            foreach (CoreCompetency field in jobData.CoreCompetencies.ToList())
+            {
+                CoreCompetencies.Add(new SelectListItem
+                {
+                    Value = field.ID.ToString(),
+                    Text = field.Value
+                });
+            }
+
+            foreach (PositionType field in jobData.PositionTypes.ToList())
+            {
+                PositionTypes.Add(new SelectListItem
+                {
+                    Value = field.ID.ToString(),
+                    Text = field.Value
+                });
+            }
         }
     }
 }
