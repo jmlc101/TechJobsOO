@@ -22,6 +22,12 @@ namespace TechJobs.Controllers
             // TODO #1 - get the Job with the given ID and pass it into the view
             Job someJob = jobData.Find(id);
             //
+            //Instead of:
+            //ViewBag.cheese = CheeseData.GetAll();
+            //ViewModel style?
+            //List<Cheese> cheeses = CheeseData.GetAll();
+            //  return View(cheeses)
+
             return View(someJob);
         }
 
