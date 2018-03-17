@@ -16,7 +16,7 @@ namespace TechJobs.Data
         public JobFieldData<Location> Locations { get; set; } = new JobFieldData<Location>();
         public JobFieldData<PositionType> PositionTypes { get; set; } = new JobFieldData<PositionType>();
         public JobFieldData<CoreCompetency> CoreCompetencies { get; set; } = new JobFieldData<CoreCompetency>();
-
+        public object Location { get; internal set; }
 
         private JobData()
         {
